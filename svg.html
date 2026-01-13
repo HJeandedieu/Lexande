@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&display=swap" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="style.css">
+    <style>
+      body{
+        background-color:rgb(82, 80, 80);
+      }
+      svg{
+        display:flex;
+        justify-content:center;
+        align-items:center;
+      }
+    </style>
+    <title>SVG | LAPTOP</title>
+</head>
+<body>
+
+    <header>
+    <div class="nav_icon">
+        <h3>PIXELORA</h3>
+    </div>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <a href="FAQ.html">FAQ</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="log_in.html">Log in</a>
+    </nav>
+  </header>
+
+<svg width="640" height="480" xmlns="http://www.w3.org/2000/svg">
+
+  <!-- =======================
+       LAPTOP SCREEN SECTION
+       ======================= -->
+
+  <!-- Outer screen frame (bezel) -->
+  <rect 
+    x="200" y="60" 
+    width="240" height="170"
+    fill="none"
+    stroke="black" stroke-width="5"
+  />
+
+  <!-- Inner display area -->
+  <rect 
+    x="218" y="80"
+    width="204" height="130"
+    fill="white"
+    stroke="black" stroke-width="4"
+  />
+
+  <!-- =======================
+       LAPTOP BASE SECTION
+       ======================= -->
+
+  <!-- Main laptop base (large trapezoid) -->
+  <!-- Represents the lower part of the laptop -->
+  <path 
+    d="M120,352 L200,232 L440,232 L520,352 Z"
+    fill="none"
+    stroke="black" stroke-width="5"
+  />
+
+  <!-- Keyboard platform area (inner trapezoid above keys) -->
+  <path 
+    d="M210,302 L240,252 L400,252 L430,302 Z"
+    fill="none"
+    stroke="black" stroke-width="4"
+  />
+
+  <!-- Trackpad (rounded rectangle centered on base) -->
+  <rect
+    x="280" y="307"
+    width="80" height="35"
+    rx="5"
+    fill="none"
+    stroke="black" stroke-width="3"
+  />
+
+  <!-- =======================
+       KEYBOARD SECTION
+       ======================= -->
+
+  <!-- Row 1 of keyboard keys -->
+  <g fill="#808080" stroke="black" stroke-width="2">
+    <rect x="250" y="262" width="22" height="14" rx="3"/>
+    <rect x="275" y="262" width="22" height="14" rx="3"/>
+    <rect x="300" y="262" width="22" height="14" rx="3"/>
+    <rect x="325" y="262" width="22" height="14" rx="3"/>
+    <rect x="350" y="262" width="22" height="14" rx="3"/>
+  </g>
+
+  <!-- Row 2 of keyboard keys -->
+  <g fill="#808080" stroke="black" stroke-width="2">
+    <rect x="250" y="282" width="22" height="14" rx="3"/>
+    <rect x="275" y="282" width="22" height="14" rx="3"/>
+    <rect x="300" y="282" width="22" height="14" rx="3"/>
+    <rect x="325" y="282" width="22" height="14" rx="3"/>
+    <rect x="350" y="282" width="22" height="14" rx="3"/>
+  </g>
+
+</svg>
+
+
+</body>
+</html>
