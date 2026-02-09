@@ -593,3 +593,38 @@ padding:90px;
 .header{
     display:none;
 }
+
+/* ==================== RAIN ANIMATION ==================== */
+.rain {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;                    /* behind everything */
+    overflow: hidden;
+    pointer-events: none;
+}
+
+.rain span {
+    position: absolute;
+    top: -120px;
+    width: 2px;
+    height: 120px;
+    background: linear-gradient(transparent, rgba(180, 210, 255, 0.9));
+    animation: rain-fall linear infinite;
+    opacity: 0.65;
+    transform: skew(15deg);         /* realistic rain slant */
+}
+
+.rain span:nth-child(2n) {
+    width: 1px;
+    height: 80px;
+    opacity: 0.35;
+}
+
+@keyframes rain-fall {
+    to {
+        transform: translateY(calc(100vh + 200px)) skew(15deg);
+    }
+}
